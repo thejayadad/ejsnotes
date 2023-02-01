@@ -1,0 +1,14 @@
+<section>
+    <h2>Edit Note</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <form action="/note/<%=note._id%>?_method=PUT" method="POST">
+
+            <h6 class="card-subtitle mb-2 text muted"><input name="title" value="<%=note.title%>" /></h6>
+            <p class="card-text"><textarea name="content" value="<%=note.content%>" rows="3" cols="30"></textarea></p>
+           <button>Submit</button>
+        </form>
+        </div>
+    </div>
+
+</section>

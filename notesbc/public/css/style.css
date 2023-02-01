@@ -1,0 +1,103 @@
+*{
+    margin: 0;
+    padding: 0;
+}
+
+body{
+    overflow-x: hidden;
+    font-family: monospace;
+}
+main{
+    max-width: 350px;
+    height: 85vh;
+    margin: 50px auto auto auto;
+    background: orange;
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 10% 80% 10%;
+    background: #dee3e9;
+}
+header{
+    width: 100%;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    text-align: center;
+    background-color: #bbc3ce;
+}
+
+footer{
+    width: 100%;
+    background-color: #bbc3ce;
+    box-shadow: 0 0 3px rgba(0, 0, 0, .1);
+    display: flex;
+    overflow-x: auto;
+    justify-content: space-around;
+    align-items: center;
+
+}
+.nav_link{
+    display: flex;
+    flex-direction: column;
+    align-items: center;text-decoration: none;
+    color: #985d5e;
+    cursor: pointer;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    overflow-y: auto;
+
+}
+.card{
+    margin: 10px;
+}
+
+ul {
+    display: flex;
+    justify-content: space-evenly;
+    margin-left: -35px;
+    margin-bottom: -20px;
+
+}
+.card-link{
+    text-decoration: none;
+}
+
+ul li{
+    list-style: none;
+}
+
+::-webkit-scrollbar{
+    width: 12px;
+}
+
+::-webkit-scrollbar-thumb{
+    background: #985d5e;
+    border-radius: 6px;
+
+
+}
+
+.card-link{
+    color: #985d5e;
+}
+
+input, textarea{
+    background: whitesmoke;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #985d5e;
+    padding: 3px;
+}
+
+button{
+    background: transparent;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    color: #985d5e;
+
+
+}

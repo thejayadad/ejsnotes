@@ -1,0 +1,14 @@
+<section>
+    <h2>Note Detail View</h2>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text muted"><%=notes.title%></h6>
+            <p class="card-text"><%=notes.content%></p>
+            <ul>
+                <li><a href="#" class="card-link"><i class="fas fa-edit"></i></a></li>
+                <li><form action="/note/<%=notes[i]._id%>?_method=DELETE" method="POST"><a class="card-link"><i class="fas fa-trash"></i></a></form></li>
+            </ul>
+        </div>
+    </div>
+
+</section>

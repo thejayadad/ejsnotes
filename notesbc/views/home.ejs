@@ -1,0 +1,16 @@
+<section>
+  <%for(var i = 0; i < notes.length; i++) {%>
+    <div class="card" style="width: 18rem;">
+        <div class="card-body">
+            <h6 class="card-subtitle mb-2 text muted"><%=notes[i].title%></h6>
+            <p class="card-text"><%=notes[i].content%></p>
+            <ul>
+                <li><a href="/detail/<%=notes[i]._id%>" class="card-link"><i class="fas fa-binoculars"></i></a></li>
+                <li><a href="/note/<%=notes[i]._id%>/edit" class="card-link"><i class="fas fa-edit"></i></a></li>
+                <li><form action="/note/<%=notes[i]._id%>?_method=DELETE" method="POST"><button class="card-link"><i class="fas fa-trash"></i></form></button></form></li>
+            </ul>
+        </div>
+    </div>
+
+  <% } %>
+</section>
